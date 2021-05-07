@@ -1,0 +1,42 @@
+﻿@model Gertslager.Models.Hall
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Hall</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cooling)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cooling)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nummer)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nummer)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Antal_rækker)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Antal_rækker)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Beskrivelse)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Beskrivelse)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
